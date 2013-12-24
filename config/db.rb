@@ -1,4 +1,4 @@
-db = URI.parse(ENV['HEROKU_POSTGRESQL_NAVY_URL'] || "postgres://localhost/#{APP_NAME}_#{Sinatra::Application.environment}")
+db = URI.parse(ENV['HEROKU_POSTGRESQL_BLUE_URL'] || "postgres://localhost/#{APP_NAME}_#{Sinatra::Application.environment}")
 
 DB_NAME = db.path[1..-1]
 
