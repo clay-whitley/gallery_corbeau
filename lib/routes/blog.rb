@@ -4,12 +4,6 @@ get '/posts' do
   erb :"blog/index"
 end
 
-# Show
-get '/posts/:id' do
-  @post = Post.find(params[:id])
-  erb :"blog/show"
-end
-
 # New
 get '/posts/new' do
   erb :"blog/new"
@@ -19,6 +13,12 @@ end
 get '/posts/:id/edit' do
   @post = Post.find(params[:id])
   erb :"blog/edit"
+end
+
+# Show
+get '/posts/:id' do
+  @post = Post.find(params[:id])
+  erb :"blog/show"
 end
 
 # Create
