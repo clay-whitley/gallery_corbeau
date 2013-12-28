@@ -23,7 +23,7 @@ end
 
 # Create
 post '/posts' do
-  Post.create(params[:id])
+  Post.create(params[:post])
   redirect '/posts'
 end
 
