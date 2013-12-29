@@ -2,3 +2,39 @@
   margin: 0 auto;
   width: 900px;
 }
+
+.header {
+  width: 1000px;
+  margin: 0 auto;
+  height: 50px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.footer {
+  width: 1000px;
+  margin: 0 auto;
+  height: 50px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+div.center {
+  margin: 0 auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clearfix {
+  clear: both;
+}
