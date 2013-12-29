@@ -9,10 +9,10 @@
   <title></title>
 </head>
 <body>
-  <div class="header"></div>
+  <%= erb :"partials/header", layout: false %>
   <div class="main_container">
     <%= yield %>
   </div>
-  <div class="footer"></div>
+  <%= erb :"partials/footer", layout: false %>
 </body>
 </html>
