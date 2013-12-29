@@ -11,6 +11,11 @@
 <body>
   <%= erb :"partials/header", layout: false %>
   <div class="main_container">
+    <% if @notifications %>
+      <% @notifications.each do |notification| %>
+        <%= erb :"partials/notification", layout: false, locals: { notification: notification } %>
+      <% end %>
+    <% end %>
     <%= yield %>
   </div>
   <%= erb :"partials/footer", layout: false %>

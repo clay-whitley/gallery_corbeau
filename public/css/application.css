@@ -56,3 +56,8 @@ div.center {
   border: 1px solid green;
   box-sizing: border-box;
 }
+
+.notification {
+  background-color: green;
+  width: 500px;
+}
