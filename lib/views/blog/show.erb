@@ -1,6 +1,12 @@
 <div class="post_main">
   <h1><%= @post[:title]%></h1>
-  <p><%= @post[:posted_at].to_s %></p>
+  <p><%= @post[:author] + " at " + @post[:posted_at].to_s %></p>
   <hr>
   <p><%= @post[:body] %></p>
+  <hr>
+  <a href=<%= "/posts/#{@post[:id]}/edit" %>>Edit</a>
+  <form action=<%= "/posts/#{@post[:id]}" %> method="post">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="submit" value="Delete">
+  </form>
 </div>

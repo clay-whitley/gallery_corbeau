@@ -3,10 +3,12 @@ class Post < ActiveRecord::Base
 
   private
     def post_date
-        self[:posted_at] = DateTime.now unless self[:posted_at]
+      self[:posted_at] = DateTime.now unless self[:posted_at]
     end
 
     def default_author
-      self[:author] = "David" unless self[:author]
+      if !self[:author] || self[:author] == "" 
+        self[:author] = "David"
+      end
     end
 end
