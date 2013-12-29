@@ -6,5 +6,10 @@
     <li>
       <a href="/posts">Blog</a>
     </li>
+    <% if session[:login] %>
+      <li class="right">
+        <a href="/logout">Logout</a>
+      </li>
+    <% end %>
   </ul>
 </div>

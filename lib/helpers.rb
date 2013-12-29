@@ -47,3 +47,7 @@ def add_include_path(*args)
   $: << path unless $:.include?(path)
 end
 add_include_path(___('lib')) # /{root}/lib/
+
+def ensure_auth
+  redirect '/' unless session[:login]
+end

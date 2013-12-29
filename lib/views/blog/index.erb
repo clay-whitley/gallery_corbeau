@@ -6,4 +6,6 @@
   </div>
 <% end %>
 <hr>
-<a href="/posts/new">New Post</a>
+<% if session[:login] %>
+  <a href="/posts/new">New Post</a>
+<% end %>

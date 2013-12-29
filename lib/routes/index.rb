@@ -1,4 +1,4 @@
 get '/' do
-  @name = "Didi"
+  p session
   erb :index
 end
