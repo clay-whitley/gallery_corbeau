@@ -35,6 +35,7 @@ GEM
       rack
     raindrops (0.12.0)
     rake (10.1.1)
+    redcarpet (3.0.0)
     sinatra (1.4.4)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -59,5 +60,6 @@ DEPENDENCIES
   pry
   rack
   rake
+  redcarpet
   sinatra
   unicorn

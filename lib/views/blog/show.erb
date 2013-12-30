@@ -2,7 +2,7 @@
   <h1><%= @post[:title]%></h1>
   <p><%= @post[:author] + " at " + @post[:posted_at].to_s %></p>
   <hr>
-  <p><%= @post[:body] %></p>
+  <p><%= @post[:rendered_content] %></p>
   <% if session[:login] %>
     <hr>
     <a href=<%= "/posts/#{@post[:id]}/edit" %>>Edit</a>

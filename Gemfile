@@ -12,6 +12,8 @@ gem 'pg'
 
 gem 'unicorn'
 
+gem 'redcarpet'
+
 group :development do
   gem 'pry'
 end

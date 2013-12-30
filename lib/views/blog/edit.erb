@@ -2,7 +2,7 @@
   <input type="text" name="post[title]" value=<%= @post[:title]%>>
   <input type="text" name="post[author]" value=<%= @post[:author]%>>
   <input type="date" name="post[posted_at]" value=<%= @post[:posted_at] %>>
-  <textarea name="post[body]" cols="30" rows="10"><%= @post[:body] %></textarea>
+  <textarea name="post[body]" rows="30" style="width:100%"><%= @post[:body] %></textarea>
   <input type="submit" value="Update post">
   <input type="hidden" name="_method" value="put">
 </form>
