@@ -1,15 +1,20 @@
-<div class="header">
-  <ul class="navbar">
-    <li>
-      <a href="/">Home</a>
-    </li>
-    <li>
-      <a href="/posts">Blog</a>
-    </li>
-    <% if session[:login] %>
-      <li class="right">
-        <a href="/logout">Logout</a>
+<img src="/gc_banner.png" alt="banner">
+
+<div class="contain-to-grid">
+  <nav class="top-bar" data-topbar>
+    <ul class="title-area">
+      <li class="name">
       </li>
-    <% end %>
-  </ul>
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
+
+    <section class="top-bar-section">
+
+      <!-- Left Nav Section -->
+      <ul class="left">
+        <li><a href="/">Details</a></li>
+        <li><a href="/posts">Revelations</a></li>
+      </ul>
+    </section>
+  </nav>
 </div>
