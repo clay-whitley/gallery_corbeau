@@ -61,3 +61,7 @@ div.center {
   background-color: green;
   width: 500px;
 }
+
+.post_form {
+  padding-top: 15px;
+}

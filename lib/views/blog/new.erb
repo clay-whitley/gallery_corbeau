@@ -1,7 +1,7 @@
-<form action="/posts" method="post">
-  <input type="text" name="post[title]">
-  <input type="text" name="post[author]" placeholder="Default is 'David'">
-  <input type="date" name="post[posted_at]">
-  <textarea name="post[body]" cols="30" rows="30" style="width:100%"></textarea>
-  <input type="submit" value="Create post">
+<form action="/posts" method="post" class="post_form">
+  <input type="text" name="post[title]" placeholder="Title">
+  <input type="text" name="post[author]" placeholder="Author (default is 'David')">
+  <label for="post[posted_at]" style="display: inline-block">Posted at:</label><input type="date" name="post[posted_at]" style="width: 200px; display: inline-block; margin-left:15px;">
+  <textarea name="post[body]" cols="30" rows="30" style="height:300px;"></textarea>
+  <input type="submit" value="Create post" class='button'>
 </form>

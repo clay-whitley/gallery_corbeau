@@ -1,8 +1,8 @@
-<form action="/posts/<%=@post[:id]%>" method="post">
-  <input type="text" name="post[title]" value=<%= @post[:title]%>>
-  <input type="text" name="post[author]" value=<%= @post[:author]%>>
-  <input type="date" name="post[posted_at]" value=<%= @post[:posted_at] %>>
-  <textarea name="post[body]" rows="30" style="width:100%"><%= @post[:body] %></textarea>
-  <input type="submit" value="Update post">
-  <input type="hidden" name="_method" value="put">
+<form action=<%= "/posts/#{@post[:id]}" %> method="post" class="post_form">
+  <input type="text" name="post[title]" placeholder="Title" value=<%= "'#{@post[:title]}'" %>>
+  <input type="text" name="post[author]" placeholder="Author (default is 'David')" value=<%= @post[:author] %>>
+  <label for="post[posted_at]" style="display: inline-block">Posted at:</label><input type="date" name="post[posted_at]" style="width: 200px; display: inline-block; margin-left:15px;" value=<%= @post[:posted_at] %>>
+  <textarea name="post[body]" cols="30" rows="30" style="height:300px;"><%= @post[:body] %></textarea>
+  <input type="hidden" name="_method" value="PUT">
+  <input type="submit" value="Update post" class='button'>
 </form>
