@@ -46,17 +46,6 @@ div.center {
 .navbar > li {
   display: inline-block;
 }
-
-.post_index {
-  border: 1px solid red;
-  box-sizing: border-box;
-}
-
-.post_main {
-  border: 1px solid green;
-  box-sizing: border-box;
-}
-
 .notification {
   background-color: green;
   width: 500px;
