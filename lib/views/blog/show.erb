@@ -1,6 +1,6 @@
 <div class="post_main">
   <h1><%= @post[:title]%></h1>
-  <p><%= @post[:author] + " at " + @post[:posted_at].to_s %></p>
+  <p><img src="/david_bio.png" width="35" style="margin-right: 5px;"><%= @post[:author] + " at " + @post[:posted_at].to_s %></p>
   <hr>
   <p><%= @post[:rendered_content] %></p>
   <% if session[:login] %>

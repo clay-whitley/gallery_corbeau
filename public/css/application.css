@@ -58,3 +58,9 @@ div.center {
 body {
   background-color: #BBB;
 }
+
+.hover-shadow:hover {
+  -webkit-box-shadow: 0px 1px 16px 2px #0079a1;
+  -moz-box-shadow:    0px 1px 16px 2px #0079a1;
+  box-shadow:         0px 1px 16px 2px #0079a1;
+}

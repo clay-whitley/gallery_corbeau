@@ -1707,11 +1707,11 @@ meta.foundation-mq-topbar {
     .top-bar-section li a:not(.button) {
       padding: 0 15px;
       line-height: 45px;
-      background: #BBB;
-      box-shadow: inset -1px 0px 5px 0px rgba(50, 50, 50, 0.75); }
+      background: #bb3e45;
+      }
       .top-bar-section li a:not(.button):hover {
         background: #000;
-        box-shadow: inset -1px 0px 5px 0px rgba(50, 50, 50, 0.75); }
+         }
     .top-bar-section .has-dropdown > a {
       padding-right: 35px !important; }
       .top-bar-section .has-dropdown > a:after {
