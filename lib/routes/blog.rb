@@ -1,6 +1,6 @@
 # Index
 get '/posts' do
-  @posts = Post.all
+  @posts = Post.all.order(posted_at: :asc)
   erb :"blog/index"
 end
 

@@ -1,7 +1,8 @@
+<div style="margin-top: 10px"></div>
 <% @posts.each do |post| %>
   <div class="post_index">
     <h2 class="left"><a href="/posts/<%= post[:id]%>"><%= post[:title] %></a></h2>
-    <p class="left" style="padding-left: 10px; line-height: 2.3">Posted at: <%= post[:posted_at].to_s %></p>
+    <p class="left" style="padding-left: 10px; line-height: 4.5">Posted at: <%= post[:posted_at].strftime("%B %d, %Y") %></p>
     <div class="clearfix"></div>
   </div>
 <% end %>
